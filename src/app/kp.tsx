@@ -12,7 +12,7 @@ export default function Resume() {
       <Text style={styles.title}>IT Student</Text>
 
       <Text style={styles.section}>CONTACT</Text>
-      <Text>Email: example@gmail.com</Text>
+      <Text>Email: poamy123@gmail.com</Text>
       <Text>Phone: 09063234099</Text>
       <Text>Location: Cebu, Philippines</Text>
 
