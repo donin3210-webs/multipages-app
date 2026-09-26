@@ -13,7 +13,7 @@ export default function Resume() {
 
       <Text style={styles.section}>CONTACT</Text>
       <Text>Email: poamy123@gmail.com</Text>
-      <Text>Phone: 09063234099</Text>
+      <Text>Phone: 09705726964</Text>
       <Text>Location: Cebu, Philippines</Text>
 
       <Text style={styles.section}>ABOUT ME</Text>
