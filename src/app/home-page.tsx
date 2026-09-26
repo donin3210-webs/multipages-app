@@ -25,7 +25,6 @@ export default function HomeScreen() {
 
       <TouchableOpacity
         style={styles.button}
-        activeOpacity={0.8}
         onPress={() => router.push("/members-page")}
       >
         <Text style={styles.buttonText}>View Members</Text>
