@@ -31,7 +31,7 @@ export default function MembersScreen() {
           <View style={styles.avatar}>
             <Text style={styles.avatarText}>KQ</Text>
           </View>
-          <Text style={styles.m}>Krishna Paul Quisora</Text>
+          <Text style={styles.m} onPress={() => router.push("/kp")} >Krishna Paul Quisora</Text>
         </View>
 
         <View style={styles.card}>
