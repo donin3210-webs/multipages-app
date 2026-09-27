@@ -5,13 +5,12 @@ export default function MemberInfoScreen() {
   return (
     <View style={styles.container}>
       <View style={styles.card}>
-        <View style={styles.accentBar} />
-
         <View style={styles.frameWrap}>
           <Image source={require("../img/MyIMG.jpg")} style={styles.frame} />
         </View>
 
-        <Text style={styles.name}>Lyndon Puansing Colonia</Text>
+        <Text style={styles.name}>Lyndon Colonia</Text>
+
         <View style={styles.badge}>
           <Text style={styles.badgeText}>Leader</Text>
         </View>
@@ -22,7 +21,7 @@ export default function MemberInfoScreen() {
           <Text style={styles.subText}>Northeastern Cebu Colleges (NCC)</Text>
         </View>
 
-        <View style={[styles.section, styles.sectionDivider]}>
+        <View style={[styles.section]}>
           <Text style={styles.label}>About</Text>
           <Text style={styles.text}>
             Currently a 4th year Bachelor of Science in Information Technology
@@ -65,35 +64,16 @@ const styles = StyleSheet.create({
     paddingTop: 40,
     paddingBottom: 28,
     paddingHorizontal: 28,
-    overflow: "hidden",
-    shadowColor: "#000",
-    shadowOffset: { width: 0, height: 12 },
-    shadowOpacity: 0.25,
-    shadowRadius: 24,
-    elevation: 8,
-  },
-  accentBar: {
-    position: "absolute",
-    top: 0,
-    left: 0,
-    right: 0,
-    height: 6,
-    backgroundColor: GOLD,
   },
   frameWrap: {
     width: 96,
     height: 96,
-    borderRadius: 48,
-    borderWidth: 2,
-    borderColor: GOLD,
-    padding: 3,
     marginBottom: 16,
   },
   frame: {
-    width: "100%",
-    height: "100%",
-    borderRadius: 45,
-    backgroundColor: "#eee",
+    height: 100,
+    width: 100,
+    borderRadius: 50,
   },
   name: {
     fontSize: 26,
@@ -118,15 +98,11 @@ const styles = StyleSheet.create({
     width: "100%",
     paddingVertical: 14,
   },
-  sectionDivider: {
-    borderTopWidth: 1,
-    borderTopColor: LINE,
-  },
   label: {
     fontSize: 12,
     fontWeight: "bold",
     color: MOSS,
-    letterSpacing: 0.3,
+    letterSpacing: 0.5,
     marginBottom: 6,
   },
   text: {
