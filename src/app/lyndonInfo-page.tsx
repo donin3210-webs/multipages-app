@@ -10,7 +10,7 @@ export default function MemberInfoScreen() {
           <Image source={require("../img/MyIMG.jpg")} style={styles.frame} />
         </View>
 
-        <Text style={styles.name}>Lyndon Colonia</Text>
+        <Text style={styles.name}>Lyndon Puansing Colonia</Text>
         <View style={styles.badge}>
           <Text style={styles.badgeText}>Leader</Text>
         </View>
