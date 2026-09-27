@@ -1,4 +1,5 @@
-import { Image, StyleSheet, Text, View } from "react-native";
+import { router } from "expo-router";
+import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
 export default function MemberInfoScreen() {
   return (
@@ -29,6 +30,13 @@ export default function MemberInfoScreen() {
           </Text>
         </View>
       </View>
+
+      <TouchableOpacity
+        style={styles.button}
+        onPress={() => router.push("/members-page")}
+      >
+        <Text style={styles.buttonText}>Go back</Text>
+      </TouchableOpacity>
     </View>
   );
 }
@@ -131,5 +139,18 @@ const styles = StyleSheet.create({
     fontSize: 13.5,
     color: "#5a6560",
     marginTop: 2,
+  },
+  button: {
+    marginTop: 20,
+    backgroundColor: GOLD,
+    paddingVertical: 12,
+    paddingHorizontal: 32,
+    borderRadius: 999,
+  },
+  buttonText: {
+    fontSize: 14,
+    fontWeight: "700",
+    color: MOSS_DEEP,
+    letterSpacing: 0.3,
   },
 });
