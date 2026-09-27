@@ -27,40 +27,43 @@ export default function MembersScreen() {
 
         <Text style={styles.sectionLabel}>Members</Text>
 
-        <View style={styles.card}>
+        <TouchableOpacity
+          style={styles.card}
+          onPress={() => router.push("/kp")}
+        >
           <View style={styles.avatar}>
             <Text style={styles.avatarText}>KQ</Text>
           </View>
-          <Text style={styles.m} onPress={() => router.push("/kp")} >Krishna Paul Quisora</Text>
-        </View>
+          <Text style={styles.m}>Krishna Paul Quisora</Text>
+        </TouchableOpacity>
 
-        <View style={styles.card}>
+        <TouchableOpacity style={styles.card}>
           <View style={styles.avatar}>
             <Text style={styles.avatarText}>EC</Text>
           </View>
           <Text style={styles.m}>Evewin Colita</Text>
-        </View>
+        </TouchableOpacity>
 
-        <View style={styles.card}>
+        <TouchableOpacity style={styles.card}>
           <View style={styles.avatar}>
             <Text style={styles.avatarText}>HD</Text>
           </View>
           <Text style={styles.m}>Harry Dorong</Text>
-        </View>
+        </TouchableOpacity>
 
-        <View style={styles.card}>
+        <TouchableOpacity style={styles.card}>
           <View style={styles.avatar}>
             <Text style={styles.avatarText}>OD</Text>
           </View>
           <Text style={styles.m}>Orlie Dela Pena</Text>
-        </View>
+        </TouchableOpacity>
 
-        <View style={styles.card}>
+        <TouchableOpacity style={styles.card}>
           <View style={styles.avatar}>
             <Text style={styles.avatarText}>CO</Text>
           </View>
           <Text style={styles.m}>Cristian Ortega</Text>
-        </View>
+        </TouchableOpacity>
       </View>
     </View>
   );
