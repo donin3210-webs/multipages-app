@@ -8,7 +8,7 @@ export default function HomeScreen() {
     <View style={styles.container}>
       <Text style={styles.title1}>Group 1</Text>
 
-      <Text style={styles.title2}>Team Spirit</Text>
+      <Text style={styles.title2}>👻Team Spirit</Text>
 
       <Text style={styles.title3}>
         Welcome to our Simple Multipage Application
