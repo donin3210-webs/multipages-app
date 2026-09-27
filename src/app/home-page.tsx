@@ -17,9 +17,10 @@ export default function HomeScreen() {
       <View style={styles.card}>
         <View style={styles.accentBar} />
         <Text style={styles.description}>
-          Team Spirit is a group of BSIT students collaborating on projects,
-          sharing ideas, and building skills together as we work towards
-          becoming better developers.
+          Team Spirit is a group of Bachelor of Science in Information
+          Technology(BSIT) students collaborating on projects, sharing ideas,
+          and building skills together as we work towards becoming better
+          developers.
         </Text>
       </View>
 
