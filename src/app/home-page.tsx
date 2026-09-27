@@ -15,7 +15,6 @@ export default function HomeScreen() {
       </Text>
 
       <View style={styles.card}>
-        <View style={styles.accentBar} />
         <Text style={styles.description}>
           Team Spirit is a group of Bachelor of Science in Information
           Technology(BSIT) students collaborating on projects, sharing ideas,
@@ -85,20 +84,7 @@ const styles = StyleSheet.create({
     padding: 20,
     marginBottom: 20,
     width: "100%",
-    overflow: "hidden",
-    shadowColor: "#000",
-    shadowOffset: { width: 0, height: 3 },
-    shadowOpacity: 0.2,
-    shadowRadius: 8,
-    elevation: 4,
-  },
-  accentBar: {
-    position: "absolute",
-    top: 0,
-    left: 0,
-    right: 0,
-    height: 4,
-    backgroundColor: GOLD,
+    paddingHorizontal: 50,
   },
   description: {
     fontSize: 14,

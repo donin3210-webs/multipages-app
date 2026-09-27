@@ -1,7 +1,9 @@
-import { router } from "expo-router";
+import { useRouter } from "expo-router";
 import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
 export default function MemberInfoScreen() {
+  const router = useRouter();
+
   return (
     <View style={styles.container}>
       <View style={styles.card}>
