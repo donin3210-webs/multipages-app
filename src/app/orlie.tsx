@@ -1,122 +1,82 @@
-import { Platform, ScrollView, StyleSheet, Text, View } from "react-native";
+import React from "react";
+import { ScrollView, StyleSheet, Text, View } from "react-native";
 
-const resume = {
-  name: "JUAN DELA CRUZ",
-  title: "Software Developer",
-  contact: "juan@email.com | +63 900 000 0000 | Davao City, PH",
-  summary:
-    "Detail-oriented developer with 3+ years of experience building mobile and web applications.",
-  skills: [
-    { label: "Languages", value: "JavaScript, TypeScript, Python" },
-    { label: "Frameworks", value: "React Native, Expo, React, Node.js" },
-    { label: "Tools", value: "Git, Figma, Postman, SQLite" },
-  ],
-  experience: [
-    {
-      role: "Mobile Developer",
-      company: "Tech Company Inc.",
-      period: "2023 - Present",
-      points: [
-        "Built and shipped a cross-platform app used by 5,000+ users",
-        "Implemented offline-first data sync",
-        "Reduced app load time by 35%",
-      ],
-    },
-    {
-      role: "Junior Web Developer",
-      company: "Startup Studio",
-      period: "2021 - 2023",
-      points: ["Developed responsive websites for 10+ clients"],
-    },
-  ],
-  education: [
-    {
-      degree: "BS in Information Technology",
-      school: "University of Southeastern Philippines",
-      period: "2017 - 2021",
-    },
-  ],
-};
-
-const Divider = () => <View style={styles.divider} />;
-
-const SectionTitle = ({ children }: { children: string }) => (
-  <View style={styles.section}>
-    <Text style={styles.sectionTitle}>{children.toUpperCase()}</Text>
-    <Divider />
+const Section = ({
+  title,
+  children,
+}: {
+  title: string;
+  children: React.ReactNode;
+}) => (
+  <View style={styles.card}>
+    <Text style={styles.sectionTitle}>{title}</Text>
+    {children}
   </View>
 );
 
 export default function ResumeScreen() {
   return (
-    <ScrollView contentContainerStyle={styles.container}>
-      {/* Header */}
-      <Text style={styles.name}>{resume.name}</Text>
-      <Text style={styles.center}>{resume.title}</Text>
-      <Text style={styles.center}>{resume.contact}</Text>
-      <Divider />
+    <ScrollView style={styles.screen}>
+      <View style={styles.header}>
+        <Text style={styles.name}>Orlie De La Pena</Text>
+        <Text style={styles.title}>Software Developer</Text>
+        <Text style={styles.contact}>Dawis Norte, Carmen, Cebu</Text>
+        <Text style={styles.contact}>orliedelapena62@gmail.com</Text>
+        <Text style={styles.contact}>09126391704</Text>
+      </View>
 
-      {/* Summary */}
-      <SectionTitle>Summary</SectionTitle>
-      <Text style={styles.text}>{resume.summary}</Text>
-
-      {/* Skills */}
-      <SectionTitle>Skills</SectionTitle>
-      {resume.skills.map((s) => (
-        <Text key={s.label} style={styles.text}>
-          {s.label}: {s.value}
+      <Section title="Summary">
+        <Text style={styles.text}>
+          Detail-oriented developer who builds mobile and web applications.
         </Text>
-      ))}
+      </Section>
 
-      {/* Experience */}
-      <SectionTitle>Experience</SectionTitle>
-      {resume.experience.map((job) => (
-        <View key={job.role} style={styles.block}>
-          <Text style={styles.bold}>
-            {job.role} - {job.company}
-          </Text>
-          <Text style={styles.text}>{job.period}</Text>
-          {job.points.map((p) => (
-            <Text key={p} style={styles.text}>
-              * {p}
-            </Text>
-          ))}
-        </View>
-      ))}
+      <Section title="Skills">
+        <Text style={styles.text}>
+          JavaScript, TypeScript, React Native, Expo, Git
+        </Text>
+      </Section>
 
-      {/* Education */}
-      <SectionTitle>Education</SectionTitle>
-      {resume.education.map((edu) => (
-        <View key={edu.degree} style={styles.block}>
-          <Text style={styles.bold}>{edu.degree}</Text>
-          <Text style={styles.text}>
-            {edu.school} ({edu.period})
-          </Text>
-        </View>
-      ))}
+      <Section title="Experience">
+        <Text style={styles.bold}>Web Developer</Text>
+        <Text style={styles.text}>Tech Company Inc. | 2023 - Present</Text>
+      </Section>
+
+      <Section title="Education">
+        <Text style={styles.bold}>BS in Information Technology</Text>
+        <Text style={styles.text}>
+          Northeastern Cebu Colleges | 2023 - 2027
+        </Text>
+      </Section>
     </ScrollView>
   );
 }
 
-const mono = Platform.select({ ios: "Courier", android: "monospace" });
-
 const styles = StyleSheet.create({
-  container: { padding: 20, paddingTop: 60, backgroundColor: "#fff" },
-  name: {
-    fontFamily: mono,
-    fontSize: 20,
-    fontWeight: "bold",
-    textAlign: "center",
+  screen: { flex: 1, backgroundColor: "#F4F6FA" },
+  header: {
+    backgroundColor: "#1E3A5F",
+    alignItems: "center",
+    paddingTop: 70,
+    paddingBottom: 24,
+    marginBottom: 16,
   },
-  center: { fontFamily: mono, fontSize: 13, textAlign: "center" },
-  divider: {
-    height: 1,
-    backgroundColor: "#000",
-    marginVertical: 6,
+  name: { color: "#fff", fontSize: 26, fontWeight: "700" },
+  title: { color: "#BFD7FF", fontSize: 15, marginBottom: 10 },
+  contact: { color: "#E5EEFF", fontSize: 13 },
+  card: {
+    backgroundColor: "#fff",
+    marginHorizontal: 16,
+    marginBottom: 12,
+    padding: 16,
+    borderRadius: 12,
   },
-  section: { marginTop: 18 },
-  sectionTitle: { fontFamily: mono, fontSize: 15, fontWeight: "bold" },
-  text: { fontFamily: mono, fontSize: 13, lineHeight: 20, color: "#111" },
-  bold: { fontFamily: mono, fontSize: 13, fontWeight: "bold" },
-  block: { marginBottom: 12 },
+  sectionTitle: {
+    fontSize: 14,
+    fontWeight: "700",
+    color: "#3B82F6",
+    marginBottom: 8,
+  },
+  text: { fontSize: 14, color: "#1F2937", lineHeight: 21 },
+  bold: { fontSize: 15, fontWeight: "700", color: "#1F2937" },
 });
