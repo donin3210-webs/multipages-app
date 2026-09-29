@@ -66,7 +66,7 @@ export default function ResumeScreen() {
       </Section>
 
       <Section icon="💼" title="Experience">
-        <Text style={styles.bold}>Mobile Developer</Text>
+        <Text style={styles.bold}>Web Developer</Text>
         <Text style={styles.muted}>
           Concentrix Company Inc. | 2028 - Present
         </Text>
