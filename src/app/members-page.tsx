@@ -60,7 +60,10 @@ export default function MembersScreen() {
           </Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.card}>
+        <TouchableOpacity
+          style={styles.card}
+          onPress={() => router.push("/christian")}
+        >
           <View style={styles.avatar}>
             <Text style={styles.avatarText}>CO</Text>
           </View>
