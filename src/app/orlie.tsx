@@ -40,8 +40,6 @@ export default function ResumeScreen() {
       <Section title="Experience">
         <Text style={styles.bold}>Mobile Developer</Text>
         <Text style={styles.text}>Tech Company Inc. | 2028 - Present</Text>
-        <Text style={styles.bold}>Web Developer</Text>
-        <Text style={styles.text}>Tech Company Inc. | 2023 - Present</Text>
       </Section>
 
       <Section title="Education">
