@@ -17,7 +17,7 @@ export default function MembersScreen() {
           <View style={styles.leaderAvatar}>
             <Text style={styles.leaderAvatarText}>LC</Text>
           </View>
-          <View style={styles.rowText}>
+          <View>
             <Text style={styles.m}>Lyndon Colonia</Text>
             <View style={styles.badge}>
               <Text style={styles.badgeText}>Leader</Text>
@@ -122,11 +122,6 @@ const styles = StyleSheet.create({
     marginBottom: 12,
     paddingVertical: 14,
     paddingHorizontal: 16,
-    shadowColor: "#000",
-    shadowOffset: { width: 0, height: 3 },
-    shadowOpacity: 0.15,
-    shadowRadius: 6,
-    elevation: 3,
   },
   leaderCard: {
     marginBottom: 24,
@@ -162,9 +157,6 @@ const styles = StyleSheet.create({
     fontSize: 15,
     fontWeight: "700",
     color: GOLD_SOFT,
-  },
-  rowText: {
-    flex: 1,
   },
   m: {
     fontSize: 17,
