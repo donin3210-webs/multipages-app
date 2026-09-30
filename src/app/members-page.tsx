@@ -37,28 +37,40 @@ export default function MembersScreen() {
           <Text style={styles.m}>Krishna Paul Quisora</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.card}>
+        <TouchableOpacity
+          style={styles.card}
+          onPress={() => router.push("/evewin")}
+        >
           <View style={styles.avatar}>
             <Text style={styles.avatarText}>EC</Text>
           </View>
           <Text style={styles.m}>Evewin Colita</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.card}>
+        <TouchableOpacity
+          style={styles.card}
+          onPress={() => router.push("/harry")}
+        >
           <View style={styles.avatar}>
             <Text style={styles.avatarText}>HD</Text>
           </View>
           <Text style={styles.m}>Harry Dorong</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.card}>
+        <TouchableOpacity
+          style={styles.card}
+          onPress={() => router.push("/orlie")}
+        >
           <View style={styles.avatar}>
             <Text style={styles.avatarText}>OD</Text>
           </View>
           <Text style={styles.m}>Orlie Dela Pena</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.card}>
+        <TouchableOpacity
+          style={styles.card}
+          onPress={() => router.push("/christian")}
+        >
           <View style={styles.avatar}>
             <Text style={styles.avatarText}>CO</Text>
           </View>
