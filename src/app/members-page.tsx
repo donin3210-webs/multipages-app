@@ -44,7 +44,10 @@ export default function MembersScreen() {
           <Text style={styles.m}>Evewin Colita</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.card}>
+        <TouchableOpacity
+          style={styles.card}
+          onPress={() => router.push("/harry")}
+        >
           <View style={styles.avatar}>
             <Text style={styles.avatarText}>HD</Text>
           </View>
