@@ -69,8 +69,8 @@ export default function ResumeScreen() {
       <Section title="About Me">
         <Text style={styles.text}>
           Motivated developer who enjoys creating simple, useful mobile apps
-          with React Native. I love learning new technologies and turning ideas
-          into working projects.
+          with React Native and Expo. I love learning new technologies and
+          turning ideas into working projects.
         </Text>
       </Section>
 
