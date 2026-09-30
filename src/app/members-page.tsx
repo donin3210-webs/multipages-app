@@ -18,7 +18,7 @@ export default function MembersScreen() {
             <Text style={styles.leaderAvatarText}>LC</Text>
           </View>
           <View>
-            <Text style={styles.m}>Lyndon Colonia</Text>
+            <Text style={styles.m}>Lyndon P. Colonia</Text>
             <View style={styles.badge}>
               <Text style={styles.badgeText}>Leader</Text>
             </View>
